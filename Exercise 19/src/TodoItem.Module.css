@@ -1,0 +1,52 @@
+.todoItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.todoItem:hover {
+  background-color: #f3f4f6;
+}
+
+.checkbox {
+  height: 1.25rem;
+  width: 1.25rem;
+  border-radius: 0.25rem;
+  border-color: #d1d5db;
+  cursor: pointer;
+}
+
+.text {
+  flex: 1;
+  color: #374151;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.completedText {
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+
+.deleteButton {
+  opacity: 0;
+  padding: 0.25rem 0.5rem;
+  background: none;
+  border: none;
+  color: #dc2626;
+  cursor: pointer;
+  font-weight: 500;
+  transition: opacity 0.2s, color 0.2s;
+}
+
+.todoItem:hover .deleteButton {
+  opacity: 1;
+}
+
+.deleteButton:hover {
+  color: #b91c1c;
+}
